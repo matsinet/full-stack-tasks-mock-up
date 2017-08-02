@@ -9,23 +9,14 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <style>
-        .swinlanes {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: flex-start;
-            overflow: auto;
-            background-color: aqua;
+        .swimlanes {
+            overflow-x: scroll;
         }
-
-        .swimlane {
-            max-width: 290px;
-            margin: 10px;
-            align-self: flex-start;
-            background-color: blueviolet;
+        .swimlanes .item {
+            min-width: 250px;
         }
     </style>
 </head>
-
 <body>
 <div class="ui container" style="height: 100vh;">
     <div class="ui blue massive inverted menu">
@@ -43,167 +34,34 @@
             </div>
         </div>
     </div>
-    <div class="swinlanes">
-        <div class="swimlane" id="column1">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Advanced Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec vestibulum lacus. Cras
-                        malesuada, libero sed scelerisque placerat, sapien tellus viverra mauris, eget laoreet arcu
-                        metus eget magna. Etiam sagittis lobortis massa, at dictum turpis placerat at. In est
-                        turpis, ultrices vitae aliquam ac, porttitor quis metus. Fusce blandit sem eu tellus ornare
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
+    <div class="ui large horizontal divided list swimlanes">
+        <div class="item">
+            <div class="content">
+                <div class="header">Header</div>
+                Card Content
             </div>
         </div>
-        <div class="swimlane" id="column2">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
+        <div class="item">
+            <div class="content">
+                <div class="header">Header</div>
+                Card Content
             </div>
         </div>
-        <div class="swimlane" id="column3">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
+        <div class="item">
+            <div class="content">
+                <div class="header">Header</div>
+                Card Content
             </div>
         </div>
-        <div class="swimlane" id="column4">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swimlane" id="column5">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swimlane" id="column6">
-            <div class="ui blue raised card">
-                <div class="content">
-                    <div class="header">Vue.js</div>
-                    <div class="meta">Presented by Chris</div>
-                    <div class="description">
-                        Lectus dignissim semper sed vel elit. Sed nec est at ex faucibus volutpat nec non ex.
-                        Phasellus ornare magna sem, a vulputate risus lacinia sed. Suspendisse pharetra orci sit
-                        amet felis consequat vulputate eu vel velit. Fusce dictum elementum eros. Nullam tristique
-                        eros vitae quam iaculis rutrum. Morbi dapibus tincidunt ex.
-                    </div>
-                </div>
-                <div class="extra content">
-                    <div class="ui green button">
-                        <i class="inverted thumbs up icon"></i>
-                    </div>
-                    <div class="ui grey right floated button">
-                        <i class="inverted edit icon"></i>
-                    </div>
-                </div>
+        <div class="item">
+            <div class="content">
+                <div class="header">Header</div>
+                Card Content
             </div>
         </div>
     </div>
 </div>
 
-
-
-<!--<div class="ui container" style="margin-top: 85px;">-->
-
-<!--</div>-->
 <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 </body>
