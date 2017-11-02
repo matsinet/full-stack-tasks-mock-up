@@ -1,3 +1,36 @@
-.swimlanes.item {
-    min-width: 400px;
+html, body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    min-height: 100%;
+}
+
+body {
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+
+.swimlanes {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+
+    background: #CCC;
+
+    -webkit-columns: 235px auto;
+    -moz-columns: 235px auto;
+    columns: 235px auto;
+    
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+}
+
+.card {
+    padding: .2em 15px;
+    text-indent: 1em;
+    hyphens: auto;;
 }
