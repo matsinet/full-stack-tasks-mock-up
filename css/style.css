@@ -2,12 +2,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: dimgrey;
 }
 
 .board {
     height: 100%;
     width: 100%;
-    margin-top: 45px;
+    padding-top: 45px;
     overflow-x: scroll;
 }
 
@@ -22,9 +23,19 @@ html, body {
     height: 100%;
     display: inline-block;
     width: 320px;
-    padding: 10px 7px;
+    padding: 10px 10px;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.column::-webkit-scrollbar {
+    background-color: dimgrey;
+    width: 10px;
+}
+
+.column::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5px;
 }
 
 .card {
